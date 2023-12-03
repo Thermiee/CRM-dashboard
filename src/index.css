@@ -1,3 +1,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: "Degular Display";
+    src: url
+  }
+}
+
+* {
+  font-family: "Degular Display", "Inter", sans-serif;
+}

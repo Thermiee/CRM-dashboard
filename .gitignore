@@ -28,3 +28,7 @@ build
 
 # Miscellaneous
 *.local
+
+.DS_Store
+
+
