@@ -36,7 +36,7 @@ const Navbar = () => {
                     className={` text-base ${
                       currentPath === link.url ? "text-white" : "text-black"
                     }`}
-                    style={{ fill: 'blue' }}
+                    style={{ fill: "blue" }}
                   >
                     {link.title}
                   </span>
@@ -65,7 +65,7 @@ const Navbar = () => {
                 >
                   OJ
                 </span>
-                <IoReorderThreeOutline style={{ height: "32px" }} />
+                <IoReorderThreeOutline className="text-2xl" />
               </div>
             </div>
           </div>
