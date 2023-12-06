@@ -13,7 +13,10 @@ const DashboardLayout = () => {
       <div className="flex">
       <SideIcons />
       </div>
+      <div className="flex flex-col w-full h-screen pl-3">
         <Outlet />
+      </div>
+        
       </div>
     </div>
   )
