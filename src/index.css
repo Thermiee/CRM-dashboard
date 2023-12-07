@@ -5,10 +5,12 @@
 @layer base {
   @font-face {
     font-family: "Degular Display";
-    src: url
+
   }
 }
 
 * {
   font-family: "Degular Display", "Inter", sans-serif;
+  margin: 0;
+  padding: 0;
 }

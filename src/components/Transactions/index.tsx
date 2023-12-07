@@ -7,7 +7,7 @@ import { TransactionTableProps } from "../../types"
 
 
 const TransactionSection: React.FC<TransactionTableProps> = ({
-    transactions,
+    payments,
     title,
 }) => {
   return (
@@ -18,13 +18,13 @@ const TransactionSection: React.FC<TransactionTableProps> = ({
           <p>Your transactions for the last 7 days</p>
         </div>
         <div className="flex gap-4">
-          <button className="mr-4 bg-[#EFF1F6] flex border items-center border-[#E4E4E7] w-[167px] rounded-full px-7 py-4 text-sm font-medium text-[#000]">
+          <button className="mr-4 bg-[#EFF1F6] justify-center flex border items-center border-[#E4E4E7] w-[167px] rounded-full px-7 py-4 text-sm font-medium text-[#000]">
             Filter
             <span className="ml-3">
               <IoChevronDown />
             </span>
           </button>
-          <button className=" bg-[#EFF1F6] flex border items-center  border-[#E4E4E7] w-[167px] rounded-full px-7 py-4 text-sm font-medium text-[#000]">
+          <button className=" bg-[#EFF1F6] flex border justify-center  items-center  border-[#E4E4E7] w-[167px] rounded-full px-7 py-4 text-sm font-medium text-[#000]">
             Export
             <span className="ml-3">
               <GoDownload />
@@ -32,7 +32,9 @@ const TransactionSection: React.FC<TransactionTableProps> = ({
           </button>
         </div>
       </div>
-      <TransactionTable transactions={transactions} title={title} />
+      <TransactionTable payments={ 
+        payments
+      } title={title} />
     </div>
   )
 }

@@ -5,15 +5,15 @@ import SideIcons from "./sideIcons"
 
 const DashboardLayout = () => {
   return (
-    <div>
+    <div className="w-[97vw] md:w-[95vw]">
       <Navbar />
 
       
-      <div className="w-[95vw] sm:w-[97vw] flex lg:w-[95vw] h-screen">
+      <div className="flex h-screen">
       <div className="flex">
       <SideIcons />
       </div>
-      <div className="flex flex-col w-full h-screen pl-3">
+      <div className="flex flex-col w-[92vw] h-screen pl-3">
         <Outlet />
       </div>
         

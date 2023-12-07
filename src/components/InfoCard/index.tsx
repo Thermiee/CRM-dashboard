@@ -4,7 +4,7 @@ import { CgInfo } from "react-icons/cg"
 
 interface InfoCardProps {
   title: string
-  amount: string
+  amount?: string | number
 }
 const InfoCard: React.FC<InfoCardProps> = ({ title, amount }) => {
   return (
