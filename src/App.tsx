@@ -1,11 +1,6 @@
 import "./App.css"
+import Routes from "./routes"
 
-const App = () => {
-   return (
-    <div>
-      Hello
-    </div>
-   )
-}
+  const App = () => <Routes />
 
-export default App
+  export default App
