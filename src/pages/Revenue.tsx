@@ -112,7 +112,7 @@ const Revenue: React.FC = () => {
                   amount={`USD ${walletData?.balance}`}
                   buttonText="Withdraw"
                 />
-                <div className="h-[300px] w-3/4 bg-[#fff] mt-4">
+                <div className="h-[300px] w-4/5 bg-[#fff] mt-4">
                   <ResponsiveContainer width="100%" height="100%">
                     <LineChart width={300} height={300} data={data}>
                       <Line

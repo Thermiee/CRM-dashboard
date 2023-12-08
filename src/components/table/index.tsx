@@ -41,7 +41,7 @@ const TransactionTable: React.FC<TransactionTableProps> = ({ payments }) => (
                 </div>
                 <div className="flex flex-col ml-5">
                   <span>{getTransactionDisplayName(transaction)}</span>
-                  <span>
+                  <span className="text-xs text-gray-400">
                     {getTransactionDisplayStatus(transaction)}
                   </span>
                 </div>
