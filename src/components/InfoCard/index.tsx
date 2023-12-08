@@ -6,7 +6,9 @@ interface InfoCardProps {
   title: string
   amount?: string | number
 }
+
 const InfoCard: React.FC<InfoCardProps> = ({ title, amount }) => {
+    
   return (
     <div className="flex flex-col ">
       <h3 className="text-sm flex items-center justify-between">
@@ -15,7 +17,8 @@ const InfoCard: React.FC<InfoCardProps> = ({ title, amount }) => {
           <CgInfo />
         </span>
       </h3>
-      <h1 className="font-bold text-2xl">{amount}</h1>
+      <h1 className="font-bold text-2xl">
+        {amount}</h1>
     </div>
   )
 }

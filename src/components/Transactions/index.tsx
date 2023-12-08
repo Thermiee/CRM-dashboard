@@ -5,10 +5,9 @@ import { GoDownload } from "react-icons/go"
 import TransactionTable from "../table"
 import { TransactionTableProps } from "../../types"
 
-
 const TransactionSection: React.FC<TransactionTableProps> = ({
-    payments,
-    title,
+  payments,
+  title,
 }) => {
   return (
     <div className="mr-16">
@@ -32,9 +31,7 @@ const TransactionSection: React.FC<TransactionTableProps> = ({
           </button>
         </div>
       </div>
-      <TransactionTable payments={ 
-        payments
-      } title={title} />
+      <TransactionTable payments={payments} title={title} />
     </div>
   )
 }

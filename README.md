@@ -186,7 +186,7 @@ Example:
 👤 **Author1**
 
 - GitHub: [Thermiee](https://github.com/thermiee)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+<!-- - LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle) -->
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
