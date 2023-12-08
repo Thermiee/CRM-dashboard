@@ -7,14 +7,21 @@ import { Link } from "react-router-dom"
 import { Popover, Transition } from "@headlessui/react"
 import { UserData } from "../../api"
 import { User } from "../../types"
-import { CiSettings } from "react-icons/ci";
+import { CiSettings } from "react-icons/ci"
+import { IoReceiptOutline } from "react-icons/io5"
+import { CgBriefcase } from "react-icons/cg";
+import { RxDashboard } from "react-icons/rx";
+import { MdOutlineBugReport } from "react-icons/md";
+import { MdOutlineSwitchAccount } from "react-icons/md";
+import { MdLogout } from "react-icons/md";
 
 const Navbar = () => {
   const currentPath = useCurrentPath()
   const [open, setOpen] = useState(false)
   const [userName, setUserName] = useState<User | null>(null)
-  const initials = `${userName?.first_name?.charAt(0) || ''}${userName?.last_name?.charAt(0) || ''}`;
-
+  const initials = `${userName?.first_name?.charAt(0) || ""}${
+    userName?.last_name?.charAt(0) || ""
+  }`
 
   const getUserData = async () => {
     try {
@@ -31,44 +38,38 @@ const Navbar = () => {
   const solutions = [
     {
       name: "Settings",
-
       href: "##",
       icon: CiSettings,
     },
     {
       name: "Purchase History",
-
       href: "##",
-      icon: IoReorderThreeOutline,
+      icon: IoReceiptOutline,
     },
     {
       name: "Refer and Earn",
-
       href: "##",
-      icon: IoReorderThreeOutline,
+      icon: CgBriefcase,
     },
     {
       name: "Integrations",
       href: "##",
-      icon: IoReorderThreeOutline,
+      icon: RxDashboard,
     },
     {
       name: "Report Bug",
-
       href: "##",
-      icon: IoReorderThreeOutline,
+      icon: MdOutlineBugReport,
     },
     {
       name: "Switch Accounts",
-
       href: "##",
-      icon: IoReorderThreeOutline,
+      icon: MdOutlineSwitchAccount,
     },
     {
       name: "Sign out",
-
       href: "##",
-      icon: IoReorderThreeOutline,
+      icon: MdLogout,
     },
   ]
 
@@ -155,7 +156,7 @@ const Navbar = () => {
                           <div className="relative flex flex-col gap-4 bg-white p-2">
                             <div className="flex items-center place-items-center">
                               <div className="text-white bg-gray-500 rounded-full p-4 text-xs font-bold leading-none inline-block align-middle">
-                              {initials}
+                                {initials}
                               </div>
                               <div className="flex flex-col">
                                 <span className="ml-2 text-lg font-medium text-black">
