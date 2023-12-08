@@ -7,6 +7,7 @@ import { Link } from "react-router-dom"
 import { Popover, Transition } from "@headlessui/react"
 import { UserData } from "../../api"
 import { User } from "../../types"
+import { CiSettings } from "react-icons/ci";
 
 const Navbar = () => {
   const currentPath = useCurrentPath()
@@ -32,7 +33,7 @@ const Navbar = () => {
       name: "Settings",
 
       href: "##",
-      icon: IoReorderThreeOutline,
+      icon: CiSettings,
     },
     {
       name: "Purchase History",
